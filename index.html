@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <!-- original:https://codepen.io/boudra/pen/raErwP -->
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
 
     <style>
-       body {
+        body {
     font-family: 'Arial', sans-serif;
-  height: 100vh;
+    background-color: #fff;
 }
 
 .wrapper {
@@ -26,38 +26,23 @@ button::-moz-focus-inner {
 }
 
 #calendari {
-    margin: 20px 0;
-    position: relative;
-    overflow: hidden;
-    height: 310px;
-    width: 350px;
+    margin:  0 auto;
+    /* height: 330px; */
+    /* width: 350px; */
     font-size: 14px;
-    box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
+    /* box-shadow: 0px 1px 4px rgba(0,0,0,0.4); */
 }
 table {
     border-collapse: collapse;
     table-layout: fixed;
-    width: 350px;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
     background-color: #fff;
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateX(0);
-    transition: all 0.3s ease;
+
+
 }
-table.actiu {
-    transform: translateX(0px)top;
-}
-table.inactiu {
-    transition: all 0.3s 0.01s ease;
-}
-table.amagat-esquerra {
-    transform: translateX(-299px);
-}
-table.amagat-dreta {
-    transform: translateX(300px);
-}
+
+
 td,th {
     text-align: center;
     background-color: #fff;
@@ -172,7 +157,7 @@ footer a:link {
         <div id="calendari"></div>
       </div>
       <script>
-       var mesos = [
+        var mesos = [
     'Enero',
     'Febrero',
     'Marzo',
@@ -180,7 +165,7 @@ footer a:link {
     'Mayo',
     'Junio',
     'Julio',
-    'Agosto',
+    'Augosto',
     'Septiembre',
     'Octubre',
     'Noviembre',
